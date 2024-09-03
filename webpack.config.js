@@ -24,24 +24,14 @@ module.exports = {
                 test: /\.css$/i,
                 use: ["style-loader", "css-loader"],
             },
+            {
+                test: /\.html$/i,
+                loader: "html-loader",
+              },
+              {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: "asset/resource",
+              },
         ],
-        loaders: [
-            {
-              test: /\.scss$/,
-              loader: 'style-loader!css-loader!sass-loader'
-            },
-            {
-              test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-              use: [
-                {
-                  loader: 'file-loader',
-                  options: {
-                    name: '[name].[ext]',
-                    outputPath: 'fonts/'
-                  }
-                },
-              ],
-            },
-          ]
     },
 };
