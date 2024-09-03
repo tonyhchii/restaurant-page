@@ -40,6 +40,8 @@ h1 {
 
 p {
     font-size: 1.2rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
 }
 
 ul {
@@ -50,4 +52,18 @@ ul {
     background-color: hsl(68, 9%, 87%);
     padding: 2rem;
     border-radius: 1rem;
+    width: 70vw;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.card {
+    background-color: hsl(68, 9%, 87%);
+    padding: 2rem;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
 }
