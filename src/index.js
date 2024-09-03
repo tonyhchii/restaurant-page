@@ -1,6 +1,7 @@
 import { loadHome } from './homePage';
 import { loadMenu } from './menuPage';
 import { loadContact } from './contactPage';
+import "./styles.css";
 
 const content = document.querySelector('#content');
 loadHome();
@@ -21,6 +22,7 @@ menuButton.addEventListener('click', () => {
 const contactButton = document.querySelector('.contact');
 contactButton.addEventListener('click', () => {
     refreshPage();
+    contactButton.focus();
     loadContact();
 })
 
